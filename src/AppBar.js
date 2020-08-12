@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
+// import Typography from '@material-ui/core/Typography';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import Box from '@material-ui/core/Box';
-import Container from '@material-ui/core/Container';
+// import Box from '@material-ui/core/Box';
+// import Container from '@material-ui/core/Container';
 import Slide from '@material-ui/core/Slide';
 import logo from "./amazon-logo.jpg";
 import Button from '@material-ui/core/Button';
 import { makeStyles } from '@material-ui/core/styles';
-import MenuIcon from '@material-ui/icons/Menu';
-import IconButton from '@material-ui/core/IconButton';
-import Brightness6Icon from '@material-ui/icons/Brightness6';
-import Brightness3Icon from '@material-ui/icons/Brightness3';
+// import MenuIcon from '@material-ui/icons/Menu';
+// import IconButton from '@material-ui/core/IconButton';
+// import Brightness6Icon from '@material-ui/icons/Brightness6';
+// import Brightness3Icon from '@material-ui/icons/Brightness3';
 
 const useStyles = makeStyles((theme) => ({
     root: {
