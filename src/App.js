@@ -33,7 +33,7 @@ return(
       <HideAppBar/>       
 
     <div className="Dheading">
-    <div>  <h1 className="Heading" style={{marginLeft:"3%",textAlign:"center",fontFamily:"Alegreya",textAlign:"left",position:"relative", fontSize:"52px"}}><a name="Amazon Consultant">Looking for a Amazon Consultant for you startup</a></h1>
+    <div>  <h1 className="Heading" style={{marginLeft:"3%",fontFamily:"Alegreya",textAlign:"left",position:"relative", fontSize:"52px"}}><a href="javascript:void(0);" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Amazon Consultant">Looking for a Amazon Consultant for you startup</a></h1>
     <br/><br/>
     <h3 style={{marginLeft:"3%",fontSize:"32px",fontWeight:"lighter"}}>You are at the right place</h3>
   
@@ -45,7 +45,7 @@ return(
 </Swing>
      </div>
     <div className="innerdetails">
-<div className="About"><h2 style={{textAlign:"center",color:"black",fontFamily:"Alegreya",fontSize:"42px",color: "rgb(61, 54, 42)",paddingTop:"0px"}}><a name="About">About</a>
+<div className="About"><h2 style={{textAlign:"center",fontFamily:"Alegreya",fontSize:"42px",color: "rgb(61, 54, 42)",paddingTop:"0px"}}><a href="javascript:void(0);" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="About">About</a>
 </h2>
 <div className="AContent">
 <Fade left>
@@ -58,7 +58,7 @@ return(
 
 
 <div className="Services">
-<h2 style={{textAlign:"center",fontFamily:"Alegreya",fontStyle:"italic", fontSize:"42px",paddingTop:"50px",color: "rgb(61, 54, 42)"}}><a name="Services">Services</a></h2>
+<h2 style={{textAlign:"center",fontFamily:"Alegreya",fontStyle:"italic", fontSize:"42px",paddingTop:"50px",color: "rgb(61, 54, 42)"}}><a href="javascript:void(0);" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Services">Services</a></h2>
 <div className="Servicediv">
 <div className="SeContent">
 <Zoom>
@@ -93,7 +93,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 
 <div className="Audit">
-    <h2 style={{paddingBottom:"10%",paddingTop:"5%",textAlign:"center",fontFamily:"Alegreya",fontStyle:"italic", fontSize:"32px",color: "rgb(61, 54, 42)"}}><a name="PPC Audit">Amazon PPC Audit</a></h2>
+    <h2 style={{paddingBottom:"10%",paddingTop:"5%",textAlign:"center",fontFamily:"Alegreya", fontSize:"32px",color: "rgb(61, 54, 42)"}}><a href="javascript:void(0);" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="PPC Audit">Amazon PPC Audit</a></h2>
   <div className="AdC"> <div className="ppcp">
    <Fade left>
         <h3 style={{fontWeight:"bold",fontSize:"26px"}}>Services include</h3>
@@ -120,7 +120,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 </div></div>
 <div className="Listing">
-    <h2 style={{paddingBottom:"10%",color:"white",paddingTop:"5%",textAlign:"center",fontFamily:"Alegreya", fontSize:"42px",color: "rgb(61, 54, 42)"}}><a name="Optimization">Amazon Product Listing and Optimization</a></h2>
+    <h2 style={{paddingBottom:"10%",paddingTop:"5%",textAlign:"center",fontFamily:"Alegreya", fontSize:"42px",color: "rgb(61, 54, 42)"}}><a href="javascript:void(0);" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Optimization">Amazon Product Listing and Optimization</a></h2>
     <div className="Ocontent">
     <Flip left>
 <img src={opt} alt="Audit" width="450px"></img>
@@ -142,7 +142,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 </div>
 <div className="Contact">
-    <h2 style={{paddingTop:"5%",paddingBottom:"0%",textAlign:"center",fontFamily:"Alegreya",fontStyle:"italic", fontSize:"42px",color: "rgb(61, 54, 42)"}}><a name="Contact Us">Contact Us</a></h2>
+    <h2 style={{paddingTop:"5%",paddingBottom:"0%",textAlign:"center",fontFamily:"Alegreya",fontStyle:"italic", fontSize:"42px",color: "rgb(61, 54, 42)"}}><a href="javascript:void(0);" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Contact Us">Contact Us</a></h2>
     <div className="ContactP">
         <Zoom left><img src={contact} alt="Pics" width="300px"/></Zoom>
         <p className="p">You can contact us via</p>
