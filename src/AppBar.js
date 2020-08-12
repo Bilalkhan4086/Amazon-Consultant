@@ -16,7 +16,7 @@ import { makeStyles } from '@material-ui/core/styles';
 // import Brightness6Icon from '@material-ui/icons/Brightness6';
 // import Brightness3Icon from '@material-ui/icons/Brightness3';
 import Switch from '@material-ui/core/Switch'
-import { Tooltip } from "@material-ui/core";
+import { Tooltip, Typography } from "@material-ui/core";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -68,10 +68,12 @@ export default function HideAppBar({set,darkmode},props) {
        <div className={classes.root}>
        <AppBar>
        <Toolbar>
-        
-         <div className={classes.title}>
+        <Typography variant="h5" className={classes.title}>
+          AMAZON CONSULTANT
+        </Typography>
+         {/* <div >
            <img src={logo} width="50px" alt="Logo"/>
-           </div>
+           </div> */}
           <Button color="inherit" href="#Amazon Consultant">Home</Button>
             <Button color="inherit" href="#About">About</Button>
             <Button color="inherit" href="#Services">Services</Button>
