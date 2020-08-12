@@ -15,6 +15,9 @@ import { makeStyles } from '@material-ui/core/styles';
 // import IconButton from '@material-ui/core/IconButton';
 // import Brightness6Icon from '@material-ui/icons/Brightness6';
 // import Brightness3Icon from '@material-ui/icons/Brightness3';
+import Switch from '@material-ui/core/Switch'
+import { Tooltip } from "@material-ui/core";
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -55,7 +58,7 @@ HideOnScroll.propTypes = {
   window: PropTypes.func,
 };
 
-export default function HideAppBar(props) {
+export default function HideAppBar({set,darkmode},props) {
     const classes = useStyles();
     // const[mode,setmode] = useState("light");
   return (
@@ -75,9 +78,16 @@ export default function HideAppBar(props) {
             <Button color="inherit" href="#PPC Audit">Audit</Button>
             <Button color="inherit" href="#Optimization">Optimization</Button>
             <Button color="inherit" href="#Contact Us">Contact</Button>
-            {/* <IconButton>
-            <Brightness3Icon onClick={setmode(!mode)}/>
-            </IconButton> */}
+            
+            
+            <Tooltip title='Toggle Dark/Light Theme'>  
+          <Switch
+        checked={darkmode}
+        onChange={()=>set(!darkmode)}
+        
+      /></Tooltip>
+          
+          
           </Toolbar>
       </AppBar>
         

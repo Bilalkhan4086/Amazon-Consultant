@@ -17,7 +17,7 @@ background-color:transparent;
   background-attachment: fixed; */
   padding-bottom: 15%;
   padding-top:5%;
-  color: rgb(61, 54, 42);
+  /* color: rgb(61, 54, 42); */
   background-size: cover;
   background-repeat: no-repeat;
  height: 85%;
@@ -39,7 +39,7 @@ justify-content: space-around ;
   /* background: rgb(2,0,36); */
 /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(2,2,217,1) 35%, rgba(250,253,254,1) 100%); */
 font-family: 'Ubuntu', sans-serif;
-color: rgb(61, 54, 42);
+/* color: rgb(61, 54, 42); */
 background: transparent;
 }
 .Gays{
@@ -49,7 +49,7 @@ margin-top: 100px;
 .Audit{
   /* background: linear-gradient(rgba(26,26,26,0.5),rgba(26,26,26,0.5)),url(ppc.png); */
   /* background-size: cover; */
-  color: rgb(61, 54, 42);
+  /* color: rgb(61, 54, 42); */
   padding-left: 5%;
 
 }
@@ -92,7 +92,7 @@ font-size: 18px;
 width: 100%;
 height: 100%;
 font-weight: bold;
-color: rgb(61, 54, 42);
+/* color: rgb(61, 54, 42); */
 padding-bottom: 5%;
 font-family: 'Ubuntu', sans-serif;
 padding-left: 5%;
@@ -113,7 +113,7 @@ font-size: 18px;
   margin-top: 10%;
   width: 55%;
   font-size: 24px;
-  color: rgb(61, 54, 42);
+  /* color: rgb(61, 54, 42); */
   padding-bottom: 5%;
   margin-left: 5%;
 }
@@ -124,7 +124,7 @@ font-size: 18px;
 }
 .ListingP{
   width: 55%;
-  color: rgb(61, 54, 42);
+  /* color: rgb(46, 60, 243); */
   
   padding-bottom: 5%;
   font-size: 24px;
@@ -145,6 +145,16 @@ font-size: 18px;
  font-size: 24px;
  font-family: 'Ubuntu', sans-serif;
  font-weight: bold;
-
-
+}
+h2{
+    padding-top:5%;
+    padding-bottom:0%;
+    text-align: center;
+    font-family: Alegreya;
+    /* font-style:"italic"; */
+     font-size:42px;
+    color: rgb(42, 48, 61);
+}
+a{
+  text-decoration: none;
 }

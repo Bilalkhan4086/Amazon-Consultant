@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./App.css";
 // import pic from "./Aboutpic.png";
 import fb from "./facebook.png";
@@ -20,32 +20,52 @@ import ad from "./_audit_.svg";
 import ab from "./about.svg"
 import sv from "./svs2.svg"
 // git
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 
 
 
 function App(){
-
+const [darkmode,setdarkmode] = useState(false);
     
-//  if(mode === "light")   
-return(
-<div className="main">
-      <HideAppBar/>       
 
+//##########
+const theme = createMuiTheme({
+    palette: {
+      type: darkmode ? "dark" : "light",
+      primary: {
+        main: "#000",
+      },
+      secondary: {
+        main: "#f44336",
+        light: '#0066ff',
+        contrastText: '#000AAA',
+        button:"blue"
+    },
+    },
+  });
+// ###########
+return(
+
+<div className="main">
+      <HideAppBar  set={setdarkmode} darkmode={darkmode}/>       
+      <ThemeProvider theme={theme}>
+      <CssBaseline />
     <div className="Dheading">
-    <div>  <h1 className="Heading" style={{marginLeft:"3%",fontFamily:"Alegreya",textAlign:"left",position:"relative", fontSize:"52px"}}><a href="/#" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Amazon Consultant">Looking for a Amazon Consultant for you startup</a></h1>
+    <div>  <h1 className="Heading" style={{marginLeft:"3%",fontFamily:"Alegreya",textAlign:"left",position:"relative", fontSize:"52px"}}><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Amazon Consultant">Looking for a Amazon Consultant for you startup</a></h1>
     <br/><br/>
     <h3 style={{marginLeft:"3%",fontSize:"32px",fontWeight:"lighter"}}>You are at the right place</h3>
   
-      <Button color="primary" variant="contained" style={{width:"150px",marginLeft:"3%"}} href="https://www.facebook.com/Amazonfinder/" >Hire Now</Button>
-      <Button  style={{width:"150px",marginLeft:"3%",border:"2px solid red",color:"red"}} href="#Contact Us" >Contact Now</Button> 
+      <Button variant="contained" style={{width:"150px",marginLeft:"3%",backgroundColor:"rgb(46, 60, 243)",color:"white"}} href="https://www.facebook.com/Amazonfinder/" >Hire Now</Button>
+      <Button style={{width:"150px",marginLeft:"3%",border:"2px solid red",color:"red"}} href="#Contact Us" >Contact Now</Button> 
       </div>
 <Swing>
 <img className="HImg" src={Audit} alt="Audit" width="450px"/> 
 </Swing>
      </div>
     <div className="innerdetails">
-<div className="About"><h2 style={{textAlign:"center",fontFamily:"Alegreya",fontSize:"42px",color: "rgb(61, 54, 42)",paddingTop:"0px"}}><a href="/#" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="About">About</a>
+<div className="About"><h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="About">About</a>
 </h2>
 <div className="AContent">
 <Fade left>
@@ -58,7 +78,7 @@ return(
 
 
 <div className="Services">
-<h2 style={{textAlign:"center",fontFamily:"Alegreya",fontStyle:"italic", fontSize:"42px",paddingTop:"50px",color: "rgb(61, 54, 42)"}}><a href="/#" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Services">Services</a></h2>
+<h2><a href="/#"  style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Services">Services</a></h2>
 <div className="Servicediv">
 <div className="SeContent">
 <Zoom>
@@ -93,7 +113,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 
 <div className="Audit">
-    <h2 style={{paddingBottom:"10%",paddingTop:"5%",textAlign:"center",fontFamily:"Alegreya", fontSize:"32px",color: "rgb(61, 54, 42)"}}><a href="/#" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="PPC Audit">Amazon PPC Audit</a></h2>
+    <h2><a href="/#" name="PPC Audit">Amazon PPC Audit</a></h2>
   <div className="AdC"> <div className="ppcp">
    <Fade left>
         <h3 style={{fontWeight:"bold",fontSize:"26px"}}>Services include</h3>
@@ -120,7 +140,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 </div></div>
 <div className="Listing">
-    <h2 style={{paddingBottom:"10%",paddingTop:"5%",textAlign:"center",fontFamily:"Alegreya", fontSize:"42px",color: "rgb(61, 54, 42)"}}><a href="/#" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Optimization">Amazon Product Listing and Optimization</a></h2>
+    <h2 ><a href="/#"  style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Optimization">Amazon Product Listing and Optimization</a></h2>
     <div className="Ocontent">
     <Flip left>
 <img src={opt} alt="Audit" width="450px"></img>
@@ -142,7 +162,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 </div>
 <div className="Contact">
-    <h2 style={{paddingTop:"5%",paddingBottom:"0%",textAlign:"center",fontFamily:"Alegreya",fontStyle:"italic", fontSize:"42px",color: "rgb(61, 54, 42)"}}><a href="/#" style={{textDecoration:"none",color:"rgb(61, 54, 42)"}} name="Contact Us">Contact Us</a></h2>
+    <h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Contact Us">Contact Us</a></h2>
     <div className="ContactP">
         <Zoom left><img src={contact} alt="Pics" width="300px"/></Zoom>
         <p className="p">You can contact us via</p>
@@ -152,7 +172,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
     </div></div>
     <div className="footer">Created By <b>Muhammad Bilal</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <b>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><a style={{color:"wheat"}} href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDmBMqjqJWLRmFVTgpwwBCjXXGVJjGSRfCsSDNKhtXSmdGKtBzpjBbgWQbGhPMDNBZWRjDb">Bscs.f18.m16.a@gmail.com</a></div>
-</div>
+</ThemeProvider></div>
 )
 
 }
