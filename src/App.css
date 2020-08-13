@@ -5,155 +5,252 @@ body{
   background-repeat: no-repeat;
  height: 85%;
 }
-/* .innerdetails{
-  width: 60%;
-background-color:transparent;
-} */
-
-
-
-.Dheading{
-  /* background: linear-gradient(rgba(20,20,20,0.4),rgba(20,20,20,0.4)),url("office2.jfif");
-  background-attachment: fixed; */
-  padding-bottom: 15%;
+@media screen and (min-width: 480px) {
+  .Heading{
+    margin-left:3%;
+    font-family:Alegreya;
+    text-align:left;
+    position:relative;
+    font-size:52px;
+}
+.SubTitle{
+  margin-left:3%;
+  font-size:32px;
+  font-weight:lighter;
+}
+.Button{
+  width:150px;
+  display: flex;
+  justify-content: space-between;
+}
+.HImg{
+  width: 450px;
+}
+  .Dheading{
+  padding-bottom: 5%;
   padding-top:5%;
-  /* color: rgb(61, 54, 42); */
-  background-size: cover;
-  background-repeat: no-repeat;
  height: 85%;
 display: flex;
 justify-content: space-around ;
 }
-.AContent{
-  display: flex;
-}
-.Hire{
-  position: relative;
-  left: 40%;
- width: 100px;
- height: 40px;
- border-radius: 20px;
- /* background-color:rgba(49, 122, 218, 0.5); */
-}
 .About{
-  /* background: rgb(2,0,36); */
-/* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(2,2,217,1) 35%, rgba(250,253,254,1) 100%); */
-font-family: 'Ubuntu', sans-serif;
-/* color: rgb(61, 54, 42); */
-background: transparent;
+  font-family: 'Ubuntu', sans-serif;
+  }
+  .AContent{
+    display: flex;
+  }
+  .AP{
+    margin-top: 10%;
+    width: 55%;
+    font-size: 24px;
+    padding-bottom: 5%;
+    margin-left: 5%;
 }
 .Gays{
-height: 400px;
-margin-top: 100px;
-}
-.Audit{
-  /* background: linear-gradient(rgba(26,26,26,0.5),rgba(26,26,26,0.5)),url(ppc.png); */
-  /* background-size: cover; */
-  /* color: rgb(61, 54, 42); */
-  padding-left: 5%;
-
-}
-.footer{
-  color: rgb(234, 237, 240);
-  background-color: rgb(90, 49, 95);
-  /* background-color: rgb(243, 216, 246); */
-  text-align: center;
-  padding-top:1.25%;
-  /* display: flex; */
-  height: 50px;
-}
-
-.AdC{
-  display: flex;
-  /* justify-content: space-around; */
-}
-
-.Ocontent{
-  display: flex;
-justify-content: space-around;
-}
-.AdC{
-  display: flex;
-}
-.ppcp{
-  width: 55%;
-padding-bottom: 5%;
-font-size: 18px;
- 
-
-
-}
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-.Services{
-  /* background-image: url("About.jpg"); */
-  /* background-size: cover; */
-  /* background-position-x: 100%; */
-  background-repeat: no-repeat;
-width: 100%;
-height: 100%;
-font-weight: bold;
-/* color: rgb(61, 54, 42); */
-padding-bottom: 5%;
-font-family: 'Ubuntu', sans-serif;
-padding-left: 5%;
-background: transparent;
-font-size: 18px;
-}
-.Servicediv{
-  padding-top: 100px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.PContent{
-  width: 50%;
-}
-
-.AP{
-  margin-top: 10%;
-  width: 55%;
-  font-size: 24px;
-  /* color: rgb(61, 54, 42); */
-  padding-bottom: 5%;
-  margin-left: 5%;
-}
-.Listing{
-  /* background: linear-gradient(rgba(26,26,26,0.5),rgba(26,26,26,0.5)),url("optimization.jfif"); */
-  /* background-size: cover; */
-  background: transparent;
-}
-.ListingP{
-  width: 55%;
-  /* color: rgb(46, 60, 243); */
-  
-  padding-bottom: 5%;
-  font-size: 24px;
-}
-.Contact{
-   background-size: cover;
-   background: transparent;
-   /* background: rgb(6,14,56); */
-   /* background: linear-gradient(0deg, rgba(6,14,56,1) 1%, rgba(19,71,180,1) 29%, rgba(30,183,219,0.7791491596638656) 85%); */
-}
-.ContactP{
-  text-align: center;
-}
-.ContactP img{
-  margin: 0 10%;
-}
-.p{
- font-size: 24px;
- font-family: 'Ubuntu', sans-serif;
- font-weight: bold;
-}
-h2{
+  height: 400px;
+  margin-top: 100px;
+  }
+  h2{
     padding-top:5%;
     padding-bottom:0%;
     text-align: center;
-    font-family: Alegreya;
+    font-family: "Alegreya";
     /* font-style:"italic"; */
      font-size:42px;
     color: rgb(42, 48, 61);
+  
+  }
+  .ServiceImg{
+    width: 450px;
+    
+  }
+  
+  .ServiceImg2{
+    width: 450px; 
+  }
+  .Servicediv{
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .PContent{
+    width: 50%;
+  }
+  .Audit{
+    padding-left: 5%;
+  
+  }
+  .AdC{
+    display: flex;
+  }
+  .ppcp{
+    width: 55%;
+  padding-bottom: 5%;
+  font-size: 18px;
+  }
+  .AuditImg{
+    width: 450px;
+  }
+  .Ocontent{
+    display: flex;
+  justify-content: space-around;
+  }
+  .OImg{
+    width: 450px;
+  }
+  .ListingP{
+    width: 55%;
+    padding-bottom: 5%;
+    font-size: 24px;
+  }
+  .p{
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+   }
+   .ContactP img{
+    margin: 0px 10%;
+  }
+  .BarButton{
+    display: inline-flex;
+  }
+  .Icon{
+   display: none;
+    visibility: hidden;
+  }
+}
+@media (max-width: 678px){
+  .Heading{
+  margin-left:3%;
+    font-family: "Alegreya";
+    text-align:left;
+    position:relative;
+    font-size:30px;
+    width: 85%;    
+}
+.Dheading{
+  padding-bottom: 15%;
+  padding-top:5%;
+ height: 85%;
+
+}
+.SubTitle{
+  margin-left: 3%;
+  font-size: 24px;
+  font-weight: lighter;  
+  }
+ .Button{
+    width:110px;
+    height: 30px;
+    margin-left:3%;
+ } 
+ .BFS{
+   font-size: 11px;
+ }
+ .HImg{
+   width: 300px;
+   margin-top: 30px;
+ }
+ .AContent{
+  display: block;
+  width: 100%;
+}
+.AP{
+  margin-top: 10%;
+  width: 95%;
+  font-size: 20px;
+  padding-bottom: 0%;
+  margin-left: 5%;
+}
+.Gays{
+  height: 250px;
+  margin-top: 50px;
+}
+h2{
+  padding-top:5%;
+  padding-bottom:0%;
+  text-align: center;
+  font-family: "Alegreya";
+  /* font-style:"italic"; */
+   font-size:42px;
+  color: rgb(42, 48, 61);
+}
+.ServiceImg{
+  width: 250px; 
+}
+.ServiceImg2{
+  width: 250px;
+  display: none; 
+}
+.Servicediv{
+  padding-top: 100px;
+  display: block;
+  text-align: center;
+}
+
+.PContent{
+  width: 100%;
+}
+.AdC{
+  display: block;
+}
+.ppcp{
+  width: 100%;
+padding-bottom: 5%;
+font-size: 18px;
+}
+.AuditImg{
+  width: 250px;
+}
+.Ocontent{
+  display:block;
+}
+.OImg{
+  width: 250px;
+}
+.ListingP{
+  width: 100%;
+  padding-bottom: 0%;
+  font-size: 24px;
+}
+.p{
+  font-size: 24px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+ }
+
+ .ContactP img{
+  margin: 0px 7%;
+}
+.BarButton{
+  display: none;
+}
+.Icon{
+  display: inline-flex;
+}
+}
+
+.footer{
+  color: rgb(234, 237, 240);
+  background-color: rgb(90, 49, 95);
+  text-align: center;
+  padding-top:1.25%;
+  padding-bottom:1.25%;
+  width: 100%;} 
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+.Services{
+width: 100%;
+height: 100%;
+font-weight: bold;
+padding-bottom: 5%;
+font-family: 'Ubuntu', sans-serif;
+padding-left: 5%;
+font-size: 18px;
+}
+.ContactP{
+  text-align: center;
 }
 a{
   text-decoration: none;

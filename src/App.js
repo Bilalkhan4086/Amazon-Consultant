@@ -52,21 +52,24 @@ return(
       <HideAppBar  set={setdarkmode} darkmode={darkmode}/>       
       <ThemeProvider theme={theme}>
       <CssBaseline />
-    <div className="Dheading">
-    <div>  <h1 className="Heading" style={{marginLeft:"3%",fontFamily:"Alegreya",textAlign:"left",position:"relative", fontSize:"52px"}}><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Amazon Consultant">Looking for a Amazon Consultant for you startup</a></h1>
+    <div className="Dheading SHeading">
+    <div>  <h1 className="Heading"><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Amazon Consultant">Looking for a Amazon Consultant for you startup</a></h1>
     <br/><br/>
-    <h3 style={{marginLeft:"3%",fontSize:"32px",fontWeight:"lighter"}}>You are at the right place</h3>
+    <h3 className="SubTitle">You are at the right place</h3>
   
-      <Button variant="contained" style={{width:"150px",marginLeft:"3%",backgroundColor:"rgb(46, 60, 243)",color:"white"}} href="https://www.facebook.com/Amazonfinder/" >Hire Now</Button>
-      <Button style={{width:"150px",marginLeft:"3%",border:"2px solid red",color:"red"}} href="#Contact Us" >Contact Now</Button> 
+      <Button className="Button" variant="contained" style={{backgroundColor:"rgb(46, 60, 243)",color:"white",marginLeft:"3%"}} href="https://www.facebook.com/faraz.abid.50/" ><span className="BFS">Hire Now</span></Button>
+      <Button className="Button" style={{border:"2px solid red",color:"red",marginLeft:"3%"}} href="#Contact Us" ><span className="BFS">Contact Now</span></Button> 
       </div>
-<Swing>
-<img className="HImg" src={Audit} alt="Audit" width="450px"/> 
-</Swing>
+      <Swing>
+<img className="HImg" src={Audit} alt="Audit"/> 
+</Swing><br/>
      </div>
+
+     
     <div className="innerdetails">
-<div className="About"><h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="About">About</a>
+    <h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="About">About</a>
 </h2>
+<div className="About">
 <div className="AContent">
 <Fade left>
 <p className="AP">Welcome to our Website, All amazing people selling on amazon. we have a team of experienced and talented digital marketing individuals and we provide effective and efficient services for your amazon business to grow and reach its maximum potential at very reasonable service charges(as we don’t believe in charging extra like others and want to give you value for your money like all our satisfied clients) .if you are struggling with high ACOS and low sales, we are here to effectively manage your ppc and optimize your listing to improve your sales significantly.Contact US for Free audit of Your PPC and Listing.
@@ -82,10 +85,10 @@ return(
 <div className="Servicediv">
 <div className="SeContent">
 <Zoom>
-    <img src={Sec} alt="Logo" style={{top:"10%"}} width="500"/>
+    <img className="ServiceImg" src={Sec} alt="Logo"/>
     </Zoom><br/>
     <Zoom>
-    <img src={sv} alt="Logo" style={{top:"10%"}} width="500"/>
+    <img className="ServiceImg2" src={sv} alt="Logo"/>
     </Zoom>
     </div>
 
@@ -113,7 +116,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 
 <div className="Audit">
-    <h2><a href="/#" name="PPC Audit">Amazon PPC Audit</a></h2>
+    <h2><a href="/#"  style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="PPC Audit">Amazon PPC Audit</a></h2>
   <div className="AdC"> <div className="ppcp">
    <Fade left>
         <h3 style={{fontWeight:"bold",fontSize:"26px"}}>Services include</h3>
@@ -135,7 +138,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </Fade></div>
 <div>
     <Zoom>
-    <img src={ad} alt="LOGO" width="500px"/>
+    <img className="AuditImg" src={ad} alt="LOGO"/>
     </Zoom>
 </div>
 </div></div>
@@ -143,7 +146,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
     <h2 ><a href="/#"  style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Optimization">Amazon Product Listing and Optimization</a></h2>
     <div className="Ocontent">
     <Flip left>
-<img src={opt} alt="Audit" width="450px"></img>
+<img className="OImg" src={opt} alt="Audit"></img>
 </Flip>
         <div className="ListingP">
     <Fade right>
@@ -166,12 +169,16 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
     <div className="ContactP">
         <Zoom left><img src={contact} alt="Pics" width="300px"/></Zoom>
         <p className="p">You can contact us via</p>
-    <a href="https://www.facebook.com/Amazonfinder/"><img src={fb} alt="facebook"/></a>
-    <a href="tel:03058772851"><img src={phone} alt="Phone"/></a>
-    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new"><img src={mail} alt="Email"/></a>
+    <a href="https://www.facebook.com/faraz.abid.50/"><img src={fb} className="fb" alt="facebook"/></a>
+    <a href="tel:03058772851"><img src={phone} alt="Phone" className="phone" /></a>
+    <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPkSbKVtFQmszvffGxSbMrlcLwBKwwhkrNZVBblswhdbvXhsFKKqWgZxPJTjgpTTLHwnnF"><img src={mail} alt="Email"  className="mail" /></a>
     </div></div>
-    <div className="footer">Created By <b>Muhammad Bilal</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <b>Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b><a style={{color:"wheat"}} href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWtDmBMqjqJWLRmFVTgpwwBCjXXGVJjGSRfCsSDNKhtXSmdGKtBzpjBbgWQbGhPMDNBZWRjDb">Bscs.f18.m16.a@gmail.com</a></div>
+    <div className="footer">
+        <div style={{display:"flex",justifyContent:"space-around"}}>
+        <div><h6>Developer</h6><br/><span>Muhammad Bilal</span></div>
+        
+         <div><h6>Email</h6><br/><span><a style={{color:"white"}} href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPkSbKVtFQmszvffGxSbMrlcLwBKwwhkrNZVBblswhdbvXhsFKKqWgZxPJTjgpTTLHwnnF">Bscs.f18.m.16.a@gmail.com</a></span></div>
+    </div></div>
 </ThemeProvider></div>
 )
 
