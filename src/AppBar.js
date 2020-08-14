@@ -102,7 +102,7 @@ export default function HideAppBar({set,darkmode},props) {
 </Menu>
 
 <Avatar  alt="LOGO" src={logo} />
-        <Typography variant="h6" className={classes.title}>PPC Compaign Managers</Typography> 
+        <Typography variant="h6" className={classes.title}>PPC Campaign Managers</Typography> 
            <span className="BarButton">
             <Button  color="inherit" href="#Amazon Consultant">Home</Button>
             <Button  color="inherit" href="#About">About</Button>
