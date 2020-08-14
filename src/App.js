@@ -167,19 +167,22 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 <div className="Contact">
     <h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Contact Us">Contact Us</a></h2>
     <div className="ContactP">
+        <h3 style={{fontSize:"20px",fontWeight:"bolder"}}>Zayn Faraz</h3>
         <Zoom left><img src={contact} alt="Pics" width="300px"/></Zoom>
         <p className="p">You can contact us via</p>
     <a href="https://www.facebook.com/faraz.abid.50/"><img src={fb} className="fb" alt="facebook"/></a>
     <a href="tel:+923058772851"><img src={phone} alt="Phone" className="phone" /></a>
     <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPkSbKVtFQmszvffGxSbMrlcLwBKwwhkrNZVBblswhdbvXhsFKKqWgZxPJTjgpTTLHwnnF"><img src={mail} alt="Email"  className="mail" /></a>
     </div></div>
+    <script src="//code.tidio.co/seopql9cxmzmabaifse5oaszkqf8q3nx.js" async></script>
     <div className="footer">
         <div style={{display:"flex",justifyContent:"space-around"}}>
         <div><h6>Developer</h6><br/><span>Muhammad Bilal</span></div>
         
          <div><h6>Email</h6><br/><span><a style={{color:"white"}} href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPkSbKVtFQmszvffGxSbMrlcLwBKwwhkrNZVBblswhdbvXhsFKKqWgZxPJTjgpTTLHwnnF">Bscs.f18.m.16.a@gmail.com</a></span></div>
     </div></div>
-</ThemeProvider></div>
+</ThemeProvider>
+</div>
 )
 
 }
