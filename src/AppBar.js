@@ -17,6 +17,8 @@ import IconButton from '@material-ui/core/IconButton';
 // import Brightness3Icon from '@material-ui/icons/Brightness3';
 import Switch from '@material-ui/core/Switch';
 import { Tooltip, Typography, Menu, MenuItem } from "@material-ui/core";
+import logo from "./LOGO.jpg";
+import Avatar from '@material-ui/core/Avatar';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -29,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
       flexGrow:1,
+      paddingLeft:5
     },
   }));
   
@@ -96,10 +99,8 @@ export default function HideAppBar({set,darkmode},props) {
   <MenuItem style={{backgroundColor:"rgb(46, 60, 243)"}} onClick={handleClose}><Button  style={{color:"white"}} href="#Contact Us">Contact</Button></MenuItem>
 </Menu>
 
-        <Typography variant="h6" className={classes.title}>
-          AMAZON CONSULTANT
-        </Typography>
-         
+<Avatar  alt="LOGO" src={logo} />
+        <Typography variant="h6" className={classes.title}>PPC Compaign Managers</Typography> 
            <span className="BarButton">
             <Button  color="inherit" href="#Amazon Consultant">Home</Button>
             <Button  color="inherit" href="#About">About</Button>
