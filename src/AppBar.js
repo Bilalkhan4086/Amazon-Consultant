@@ -74,6 +74,8 @@ export default function HideAppBar({set,darkmode},props) {
     const handleClose = () => {
       setAnchorEl(null);
     };
+ 
+    
     return (
     <React.Fragment>
       <CssBaseline />
@@ -82,7 +84,7 @@ export default function HideAppBar({set,darkmode},props) {
        <AppBar style={{width:"100%"}}>
        <Toolbar>
        <IconButton>
-           <MenuIcon id="simple-menu"  aria-haspopup="true" onClick={handleClick} className={classes.menuButton,"Icon"} style={{color:"white"}} edge="start" color="inherit"/>
+           <MenuIcon id="simple-menu"  aria-haspopup="true" onClick={handleClick} className={window.innerWidth <= 678 ? "Icon": classes.menuButton } style={window.innerWidth <= 678 ? {color:"white"} : {display:"none"} } edge="start" color="inherit"/>
          </IconButton>
          <Menu
   id="simple-menu"
