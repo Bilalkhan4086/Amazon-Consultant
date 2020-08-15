@@ -121,6 +121,9 @@ justify-content: space-around ;
   }
 }
 @media (max-width: 678px){
+  .innerdetails{
+    margin: 0px 20px;
+  }
   .Heading{
   margin-left:3%;
     font-family: "Alegreya";
@@ -151,6 +154,7 @@ justify-content: space-around ;
  .HImg{
    width: 300px;
    margin-top: 30px;
+   margin-left: 40px;
  }
  .AContent{
   display: block;
@@ -166,6 +170,7 @@ justify-content: space-around ;
 .Gays{
   height: 250px;
   margin-top: 50px;
+  margin-left: 20px;
 }
 h2{
   padding-top:5%;
@@ -177,6 +182,7 @@ h2{
   color: rgb(42, 48, 61);
 }
 .ServiceImg{
+  margin-left: 20px;
   width: 250px; 
 }
 .ServiceImg2{
@@ -186,9 +192,11 @@ h2{
 .Servicediv{
   padding-top: 100px;
   display: block;
-  text-align: center;
+  /* text-align: center; */
 }
-
+.Servicediv li{
+  margin-left: -15px;
+}
 .PContent{
   width: 100%;
 }

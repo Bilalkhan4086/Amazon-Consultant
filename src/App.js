@@ -5,7 +5,7 @@ import fb from "./facebook.png";
 import phone from "./phone.png";
 import mail from "./email.png";
 import HideAppBar from "./AppBar.js";
-import { Button } from '@material-ui/core';
+import { Button, CardActions } from '@material-ui/core';
 import contact from "./contact.svg";
 import opt from "./Audit1.svg";
 import Zoom from 'react-reveal/Zoom';
@@ -22,7 +22,7 @@ import sv from "./svs2.svg"
 // git
 import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
-
+import Cards from "./Cards";
 
 
 
@@ -66,8 +66,8 @@ return(
      </div>
 
      
-    <div className="innerdetails">
-    <h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="About">About</a>
+    <div className="innerdetails" >
+    <h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="About">What We Do</a>
 </h2>
 <div className="About">
 <div className="AContent">
@@ -163,6 +163,10 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
 </div>
 </div>
 </div>
+</div>
+<div className="Reviews">
+    <h2 className="ReviewHeading"  style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}}>Satisfied Clients</h2>
+    <Fade left><Cards darkmode={darkmode}/></Fade>
 </div>
 <div className="Contact">
     <h2><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Contact Us">Contact Us</a></h2>
