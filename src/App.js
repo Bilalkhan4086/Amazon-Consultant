@@ -5,7 +5,7 @@ import fb from "./facebook.png";
 import phone from "./phone.png";
 import mail from "./email.png";
 import HideAppBar from "./AppBar.js";
-import { Button, CardActions } from '@material-ui/core';
+import { Button} from '@material-ui/core';
 import contact from "./contact.svg";
 import opt from "./Audit1.svg";
 import Zoom from 'react-reveal/Zoom';
