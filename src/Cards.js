@@ -58,7 +58,7 @@ export default function SimpleCard({darkmode}) {
         <img src={stars} alt="Stars" style={{width:"100px",display:"flex",margin:"0px auto"}}></img>
         <Typography variant="body2" component="p" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}}>
         <ShowMore lines={3} more='Show more' less='Show less' anchorClass=''>
-         Very Knowledgeable and Helpful.Would definitely Recomended Zayn Faraz for PPC and Audit.</ShowMore>
+         Very Knowledgeable and Helpful.Would definitely Recomended Zayn Faraz for PPC and Listing Optimization.</ShowMore>
         </Typography>
       </CardContent>
     </Card>
