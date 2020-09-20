@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import "./App.css";
 // import pic from "./Aboutpic.png";
-import fb from "./facebook.png";
+// import fb from "./facebook.png";
 import phone from "./phone.png";
+import whatsapp from "./whatsapp.png";
 import mail from "./email.png";
 import HideAppBar from "./AppBar.js";
 import { Button} from '@material-ui/core';
@@ -57,7 +58,7 @@ return(
     <br/><br/>
     <h3 className="SubTitle">You are at the right place</h3>
   
-      <Button className="Button" variant="contained" style={{backgroundColor:"rgb(46, 60, 243)",color:"white",marginLeft:"3%"}} href="https://www.facebook.com/zayn.faraz.9/" ><span className="BFS">Hire Now</span></Button>
+      <Button className="Button" variant="contained" style={{backgroundColor:"rgb(46, 60, 243)",color:"white",marginLeft:"3%"}} href="https://wa.me/923058772851" ><span className="BFS">Hire Now</span></Button>
       <Button className="Button" style={{border:"2px solid red",color:"red",marginLeft:"3%"}} href="#Contact Us" ><span className="BFS">Contact Now</span></Button> 
       </div>
       <Swing>
@@ -174,7 +175,7 @@ If you have a new product, A product with high Acos and Low Sales , or   just lo
         <h3 style={{fontSize:"20px",fontWeight:"bolder"}}>Zayn Faraz</h3>
         <Zoom left><img src={contact} alt="Pics" width="300px"/></Zoom>
         <p className="p">You can contact us via</p>
-    <a href="https://www.facebook.com/faraz.abid.50/"><img src={fb} className="fb" alt="facebook"/></a>
+    <a href="https://wa.me/923058772851"><img src={whatsapp} width="60px" className="fb" alt="Whatsapp"/></a>
     <a href="tel:+923058772851"><img src={phone} alt="Phone" className="phone" /></a>
     <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwPkSbKVtFQmszvffGxSbMrlcLwBKwwhkrNZVBblswhdbvXhsFKKqWgZxPJTjgpTTLHwnnF"><img src={mail} alt="Email"  className="mail" /></a>
     </div></div>
