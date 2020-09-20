@@ -54,7 +54,7 @@ return(
       <ThemeProvider theme={theme}>
       <CssBaseline />
     <div className="Dheading SHeading">
-    <div>  <h1 className="Heading"><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Amazon Consultant">Looking for a Amazon Consultant for you startup</a></h1>
+    <div>  <h1 className="Heading"><a href="/#" style={darkmode ? {color:"white"}:{color:"rgb(61, 54, 42)"}} name="Amazon Consultant">Looking for a Amazon Consultant for your startup</a></h1>
     <br/><br/>
     <h3 className="SubTitle">You are at the right place</h3>
   
